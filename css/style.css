@@ -1,0 +1,427 @@
+body{
+    display: block;
+    margin: 20px 40px;
+    font-family: 'Open Sans', "Helvetica", 'Arial', sans-serif;
+    background: #cecece;
+}
+
+@media only screen and (max-width: 1024px) {
+    body{
+        margin: 15px 30px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body{
+        background: #fbfbfb;
+        margin: 0px 0px;
+    }
+}
+
+h1, h2{
+    color: #333333;
+    font-weight: 300;
+}
+
+h2{
+    font-size: 1em;
+    padding-top: 15px;
+}
+
+@media only screen and (max-width: 1024px) {
+    h2{
+        padding-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h2{
+        text-align: center; 
+        padding-top: 0px;  
+    }
+}
+
+h1{
+    font-size: 1.2em;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 480px) {
+    h1{
+        padding-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        align-content: center;
+        display: block;
+    }
+}
+
+p{
+    font-size: 0.9em;
+    font-weight: 300;
+    color: #333333;
+    text-height: auto;
+}
+
+#description{
+    margin-bottom: 110px;
+}
+
+@media only screen and (max-width: 1024px) {
+    #description{
+        margin-bottom: 150px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #description{
+        margin-bottom: 60px;
+    }
+}
+
+#bank-description{
+    margin-right: 120px;
+    width: 25%;
+    text-align: center;
+    float: right;
+    background: #fbfbfb;
+    padding: 0px 10px 10px 10px;
+    position:absolute;
+    z-index: 2;
+    top: 20px;
+    right: 70px;
+    border-left: 0.8px solid #929292;
+    border-right: 0.8px solid #929292;
+    border-bottom: 0.8px solid #929292;
+    box-shadow: 0.2em 0.3em 0.7em #dedede; 
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;  
+}
+
+@media only screen and (max-width: 1024px) {
+    #bank-description{
+        width: 40%;
+        right: 60px;
+        margin: 0px 0px;
+        padding: 10px 10px
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #bank-description{
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+        float: none;
+        position: relative;
+        right: 0px;
+        top: 10px;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        box-shadow: none; 
+
+    }
+}
+
+.container{
+    background: #fbfbfb;
+    box-shadow: 0 0 1.5em #636363;
+    padding: 20px 150px 20px 150px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .container{
+        padding: 20px 0px 20px 0px;
+
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container{
+        width: 100%;
+        padding: 0px 0px 0px 0px;
+        margin: 0 0;
+        box-shadow: none;
+    }
+}
+
+#grouped{
+    margin-top: 100px;
+    z-index: -10;
+}
+
+@media only screen and (max-width: 480px) {
+    #grouped{
+        margin-top: 20px;
+    }
+}
+
+img{
+    height: 145px; 
+    width: 250px;
+}
+
+.separator, #center{
+    line-height: 0.5;
+    font-size: 100%;
+    color: rgb(169, 169, 169);
+    vertical-align: central;
+    display: block;
+    text-align: center;
+    vertical-align: central;
+    align-content: center;
+    margin: 1.5em 0em 1em 0em;
+}
+
+@media only screen and (max-width: 1024px) {
+    .separator{
+        padding: 0px 30px 0px 30px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .separator{
+        padding: 0px 20px 0px 20px;
+    }
+}
+
+#bank-description-text{
+    display: none;
+    text-align: left;
+    padding:  20px 25px 0px 30px;
+    line-height: 1.6;
+}
+
+@media only screen and (max-width: 1024px) {
+    #bank-description-text{
+        padding:  20px 10px 0px 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #bank-description-text{
+        padding:  20px 0px 0px 0px;
+    }
+}
+
+.title-separate span{
+    background-color: #fbfbfb;
+    padding: 0 2em;
+}
+
+.title-separate{
+    color: #a9a9a9;
+    display: inline-block;
+    position: relative;
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #ccc;
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+}
+
+.bank-block input{
+    visibility: hidden;
+}
+
+.bank-block.active {
+    box-shadow: 0 0 7px 2px #0099ff;
+}
+
+.bank-block {
+    position: relative;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: white;
+    border: 1px solid #b2b2b2;
+    border-radius: 0.2em;
+    display: inline-block;
+    width: 140px;
+    height: 73px;
+    margin: 10px 13px 0 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+#button-show{
+    background-color: #348bb9;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 8px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#button-show:focus{
+    outline:  none !important;
+}
+
+.button {
+    background-color: #348bb9;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.button:hover{
+    background-color: #0a71a8;
+}
+
+.button:active{
+    transform: translateY(1px);
+}
+
+.button:focus{
+    outline:  none !important;
+}
+
+#checkbox-error.error{
+    color: red;
+    font-size: 14px;
+    display: inline;
+    float: left;
+    text-align: center;
+    margin-right: 1em;
+    margin-top: 0.6em;
+    width: 100%;
+    padding: 5px 5px;
+}
+
+@media only screen and (max-width: 1024px) {
+    #checkbox-error.error{
+        margin-top: 0.5em;
+        margin-bottom: 0.7em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #checkbox-error.error{
+        line-height: normal;
+    }
+}
+
+#tpay-accept-regulations{
+    margin: 3px 3px 3px 4px;
+}
+#visa_master_card_maestro {
+    background-image: url(https://secure.tpay.com/_/g/103.png?3) ;
+    width: 299px;
+}
+#alior_bank{
+    background-image: url(https://secure.tpay.com/_/g/113.png?3) ;
+}
+#bank_pekao{
+    background-image: url(https://secure.tpay.com/_/g/102.png?3) ;
+}
+#bank_polski{
+    background-image: url(https://secure.tpay.com/_/g/108.png?3) ;
+}
+#inteligo{
+    background-image: url(https://secure.tpay.com/_/g/110.png?3) ;
+}
+#blik{
+    background-image: url(https://secure.tpay.com/_/g/150.png?3) ;
+}
+#mbank{
+    background-image: url(https://secure.tpay.com/_/g/160.png?3) ;
+}
+#ing{
+    background-image: url(https://secure.tpay.com/_/g/111.png?3) ;
+}
+#millennium{
+    background-image: url(https://secure.tpay.com/_/g/114.png?3) ;
+}
+#santander{
+    background-image: url(https://secure.tpay.com/_/g/115.png?3) ;
+}
+#eurobank{
+    background-image: url(https://secure.tpay.com/_/g/131.png?3) ;
+}
+#citi_handlowy{
+    background-image: url(https://secure.tpay.com/_/g/132.png?3) ;
+}
+#credit_agricole{
+    background-image: url(https://secure.tpay.com/_/g/116.png?3) ;
+}
+#get_in_bank{
+    background-image: url(https://secure.tpay.com/_/g/119.png?3) ;
+}
+#t_mobile{
+    background-image: url(https://secure.tpay.com/_/g/112.png?3) ;
+}
+#bank_pocztowy{
+    background-image: url(https://secure.tpay.com/_/g/124.png?3) ;
+}
+#bos_bank{
+    background-image: url(https://secure.tpay.com/_/g/125.png?3) ;
+}
+#idea_bank{
+    background-image: url(https://secure.tpay.com/_/g/128.png?3) ;
+}
+#banki_spoldzielcze{
+    background-image: url(https://secure.tpay.com/_/g/135.png?3) ;
+}
+#bgz_bnp_paribas{
+    background-image: url(https://secure.tpay.com/_/g/133.png?3) ;
+}
+#neo_bank{
+    background-image: url(https://secure.tpay.com/_/g/159.png?3) ;
+}
+#raiffeisen_polbank{
+    background-image: url(https://secure.tpay.com/_/g/139.png?3) ;
+}
+#deutsche_bank{
+    background-image: url(https://secure.tpay.com/_/g/134.png?3) ;
+}
+#nest_bank{
+    background-image: url(https://secure.tpay.com/_/g/130.png?3) ;
+}
+#plus_bank{
+    background-image: url(https://secure.tpay.com/_/g/145.png?3) ;
+}
+#toyota_bank{
+    background-image: url(https://secure.tpay.com/_/g/140.png?3) ;
+}
+#volkswagen_bank{
+    background-image: url(https://secure.tpay.com/_/g/137.png?3) ;
+}
+#g_pay{
+    background-image: url(https://secure.tpay.com/_/g/166.png?3) ;
+}
+#visa_checkout{
+    background-image: url(https://secure.tpay.com/_/g/163.png?3) ;
+}
+#master_pass{
+    background-image: url(https://secure.tpay.com/_/g/104.png?3) ;
+}
+#pay_pal{
+    background-image: url(https://secure.tpay.com/_/g/106.png?3) ;
+}
+#raty_t{
+    background-image: url(https://secure.tpay.com/_/g/109.png?3) ;
+}
+#sepa_euro_payments{
+    background-image: url(https://secure.tpay.com/_/g/148.png?3) ;
+}
+#poczta_polska{
+    background-image: url(https://secure.tpay.com/_/g/157.png?3) ;
+}
+

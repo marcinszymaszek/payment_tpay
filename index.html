@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>payment - kwhotel.com</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/jquery-3.3.1.js"></script>
+        <script src="js/jquery.validate.js"></script>
+    </head>
+    <body>
+        <div class="container" id="payment-main">
+            <div id="description">
+                <h1 id="hotel-name">O.W. Zielona Sowa</h1>
+                <div id="bank-description">
+                    <h2 id="bank-name"><strong>Tytuł: </strong>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</h2>
+                    <p id="bank-description-text"><strong>Opis:</strong><br>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem 
+                        sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi 
+                        tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis 
+                        suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil 
+                        molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
+                    <input id="button-show" type="button" value="Szczegóły" />
+                </div>
+            </div>
+            <div id="grouped">
+                <div class="separator">
+                    <p class="title-separate"><span>Karty płatnicze i przelewy</span></p>
+                </div>
+                <form id="center" action="" method="post" name="send">
+                    <div id="bank-selection">
+                        <input name="visa_master_card_maestro" class="bank-block active" id="visa_master_card_maestro" readonly/>
+                        <input name="alior_bank" class="bank-block" id="alior_bank" readonly/>
+                        <input name="bank_pekao" class="bank-block" id="bank_pekao" readonly/>
+                        <input name="bank_polski" class="bank-block" id="bank_polski" readonly/>
+                        <input name="inteligo" class="bank-block" id="inteligo" readonly/>
+                        <input name="blik" class="bank-block" id="blik" readonly/>
+                        <input name="mbank" class="bank-block" id="mbank" readonly/>
+                        <input name="ing" class="bank-block" id="ing" readonly/>                        
+                        <input name="millennium" class="bank-block" id="millennium" readonly/>    
+                        <input name="santander" class="bank-block" id="santander" readonly/>
+                        <input name="eurobank" class="bank-block" id="eurobank" readonly/>
+                        <input name="citi_handlowy" class="bank-block" id="citi_handlowy" readonly/>
+                        <input name="credit_agricole" class="bank-block" id="credit_agricole" readonly/>
+                        <input name="get_in_bank" class="bank-block" id="get_in_bank" readonly/>
+                        <input name="t_mobile" class="bank-block" id="t_mobile" readonly/>
+                        <input name="bank_pocztowy" class="bank-block" id="bank_pocztowy" readonly/>
+                        <input name="bos_bank" class="bank-block" id="bos_bank" readonly/>
+                        <input name="idea_bank" class="bank-block" id="idea_bank" readonly/>
+                        <input name="banki_spoldzielcze" class="bank-block" id="banki_spoldzielcze" readonly/>
+                        <input name="bgz_bnp_paribas" class="bank-block" id="bgz_bnp_paribas" readonly/>
+                        <input name="neo_bank" class="bank-block" id="neo_bank" readonly/>
+                        <input name="raiffeisen_polbank" class="bank-block" id="raiffeisen_polbank" readonly/>
+                        <input name="deutsche_bank" class="bank-block" id="deutsche_bank" readonly/>
+                        <input name="nest_bank" class="bank-block" id="nest_bank" readonly/>
+                        <input name="plus_bank" class="bank-block" id="plus_bank" readonly/>
+                        <input name="toyota_bank" class="bank-block" id="toyota_bank" readonly/>
+                        <input name="volkswagen_bank" class="bank-block" id="volkswagen_bank" readonly/>
+                        <input name="g_pay" class="bank-block" id="g_pay" readonly/>
+                        <input name="visa_checkout" class="bank-block" id="visa_checkout" readonly/>
+                    </div>
+                    <div class="separator">
+                        <p class="title-separate"><span>Pozostałe</span></p>
+                    </div>
+                    <div id="bank-selection2">
+                        <input name="master_pass" class="bank-block" id="master_pass" readonly/>
+                        <input name="pay_pal" class="bank-block" id="pay_pal" readonly/>
+                        <input name="raty_t" class="bank-block" id="raty_t" readonly/>
+                        <input name="sepa_euro_payments" class="bank-block" id="sepa_euro_payments" readonly/>
+                        <input name="poczta_polska" class="bank-block" id="poczta_polska" readonly/>
+                    </div>
+                    <br>
+                    <div id="tpay-payment">
+                        <input class="button" name="submit" type="submit" value="Zapłać z tpay.com"/>
+                    </div>
+                    <div id="tpay-accept-regulations">
+                        <input name="checkbox" type="checkbox"/><label>Akceptuję <a href="https://secure.tpay.com/regulamin.pdf"> regulamin</a> serwisu tpay.com</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="js/bankChooser.js"></script>
+        <script src="js/validation.js"></script>
+        <script src="js/textShow.js"></script>
+    </body>
+</html>
+
+
